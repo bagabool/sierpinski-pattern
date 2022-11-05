@@ -45,11 +45,12 @@ const createInitialPattern = (columns) => {
 }
 
 const go = (columns) => {
+    console.log(columns)
     for (let i = columns + 1; i < rows * columns; i++) {
         const thisTile = wrapper.childNodes.item(i)
-        const upLeftTile = wrapper.childNodes.item?.(i - columns - 1)
-        const upTile = wrapper.childNodes.item?.(i - columns)
-        const upRightTile = wrapper.childNodes.item?.(i - columns + 1)
+        const upLeftTile = wrapper.childNodes.item(i - columns - 1)
+        const upTile = wrapper.childNodes.item(i - columns)
+        const upRightTile = wrapper.childNodes.item(i - columns + 1)
         let blueTilesCount = 0
         if (i % columns === 0) {
             if (upTile.classList.contains('blue') || upRightTile.classList.contains('blue')) {
