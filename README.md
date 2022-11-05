@@ -1,3 +1,3 @@
 ### Sierpiński pattern demo 🐚
 
-![Video](demo.webm)
+![Video](demo.webp)
