@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#so-link {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.point {
+    height: 5px;
+    width: 5px;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.go {
+    background-color: #dfd2b1;
+    color: black;
+    right: 20px;
+    bottom: 20px;
+    border: none;
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    cursor: pointer;
+}
+
+.wrapper {
+    width: 99vw;
+    height: 100vh;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-template-rows: repeat(var(--rows), 1fr);
+}
+
+.tile {
+    outline: solid 1px lightgrey;
+}
+
+.blue {
+    background-color: blue;
+}

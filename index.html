@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sierpiński pattern</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="pattern.js" defer></script>
+</head>
+<body>
+<header>
+    <h1>Sierpiński pattern demo 🐚</h1>
+    <div class="links">
+        <a href="https://wikipedia.org/wiki/Conus_textile" target="_blank">Example in nature</a>
+        <span class="point"></span>
+        <a href="https://en.wikipedia.org/wiki/Sierpi%C5%84ski_triangle" target="_blank">The math</a>
+        <span class="point"></span>
+        <p>Thanks to</p>
+        <a id="so-link" href="https://youtu.be/xmRWuk7swkc" target="_blank">El Jj</a>
+        <p>for the inspiration</p>
+    </div>
+    <form>
+        <label for="tiles-width">Tiles width : </label>
+        <input type="range" id="tiles-width" name="tiles-width"
+               min="5" max="50" value="50">
+        <span id="width"></span>
+    </form>
+    <button class="go">Go !</button>
+</header>
+<div class="wrapper"></div>
+</body>
+</html>
