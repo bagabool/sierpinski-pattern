@@ -45,7 +45,7 @@ const createInitialPattern = (columns) => {
 }
 
 const go = (rows, columns) => {
-    for (let i = columns + 1; i < rows * columns; i++) {
+    for (let i = columns; i < rows * columns; i++) {
         const thisTile = wrapper.childNodes.item(i)
         const upLeftTile = wrapper.childNodes.item(i - columns - 1)
         const upTile = wrapper.childNodes.item(i - columns)
